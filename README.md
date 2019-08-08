@@ -29,3 +29,17 @@ Simply execute the bash script PBDataRecon.sh. You can change how frequently the
 **Troubleshooting**
 1.	Warning about character encoding are typically a sign of your OS or database not being able to handle one of the many character sets found in pastebin. These errors are handled and will not stop PBDataRecon from collecting data.
 2.	The most likely cause of the “ValueError: No JSON object could be decoded” error is that you either have no Internet connection or your current IP is not whitelisted. 
+
+**Verbose Mode**
+There are four levels or output: off/medium/high/ultra
+   -Suggest ultra for debugging new code
+   -Suggest high for tuning and refining
+
+You set the level on line 63 in the "VerboseMode = " variable.
+
+**Limiting large files**
+Pastebin files can reach up to 16MB. Set the "KeepSmall = "yes" variable to prevent large filews from being saved.
+
+
+
+
